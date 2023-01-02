@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-group {
+  position: relative;
+  width: 100px;
+  height: 200px;
+}
+
+.card {
+  transition: all .5s;
+  border-radius: 3%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.cards-group:hover > .card-4 {
+  transform: translate(90%, -10%) rotate(25deg);
+}
+
+.cards-group:hover > .card-3 {
+  transform: translate(10%, -20%) rotate(8deg);
+}
+
+.cards-group:hover > .card-2 {
+  transform: translate(-70%, -20%) rotate(-8deg);
+}
+
+.cards-group:hover > .card-1 {
+  transform: translate(-120%, -10%) rotate(-30deg);
+}
+
+.card-1 {
+  transform: translateX(-22%);
+  background: url("../assets/card3.jpg") no-repeat top;
+}
+
+.card-2 {
+  transform: translateX(-15%);
+  background: url("../assets/card2.jpg") no-repeat top;
+}
+
+.card-3 {
+  transform: translateX(-12%) rotate(-6deg);
+  background: url("../assets/card3.jpg") no-repeat top;
+}
+
+.card-4 {
+  transform: translateX(-10%) rotate(4deg);
+  background: url("../assets/card1.jpg") no-repeat top;
+}
